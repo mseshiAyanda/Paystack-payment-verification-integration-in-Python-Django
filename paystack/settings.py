@@ -25,7 +25,7 @@ SECRET_KEY = 'r$n45#%6ih6ocwetd49vv#3d#u9qce&7+!9)=blf5r)g(68d2^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -116,10 +117,12 @@ USE_L10N = True
 USE_TZ = True
 
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/3.1/howto/static-files/
 
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'static')
 STATIC_URL = '/static/'
 
-PAYSTACK_PUBLIC_KEY = 'pk_test_6f4b359d153b9ff2e31970e93cf5dd9054693d4e' ##paystack public key
-PAYSTACK_SCRET_KEY = 'sk_test_55d0c2b83cc8ce2975ec7b13848b22cb93259bf1' ##paystack secret key
+PAYSTACK_PUBLIC_KEY = 'pk_test_8a2eef7cc3bd681172b742176a979bd41e115969' ##paystack public key
+PAYSTACK_SECRET_KEY = 'sk_test_1931cfe03f6dc80d883f773ef453966546fb9628' ##paystack secret key

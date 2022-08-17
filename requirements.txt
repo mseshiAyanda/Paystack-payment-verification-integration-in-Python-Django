@@ -2,8 +2,29 @@ requests
 Django
 
 
-paystack
+
 
 whitenoise
 
 pypaystack
+
+autopep8
+certifi
+chardet
+defusedxml
+
+
+
+Pillow
+pycodestyle
+pypaystack
+python-dateutil
+python-decouple
+python3-openid=
+pytz
+requests
+requests-oauthlib
+six
+sqlparse
+
+urllib3

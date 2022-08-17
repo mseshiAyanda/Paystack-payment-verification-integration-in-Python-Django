@@ -20,7 +20,7 @@ pycodestyle
 pypaystack
 python-dateutil
 python-decouple
-python3-openid=
+
 pytz
 requests
 requests-oauthlib

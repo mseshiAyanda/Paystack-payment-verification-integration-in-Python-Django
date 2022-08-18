@@ -1,5 +1,5 @@
-requests
-Django
+
+Django==3.1.13
 
 
 
@@ -14,15 +14,16 @@ chardet
 defusedxml
 
 
-
+Pygments==2.12.0
 Pillow
 pycodestyle
-pypaystack
+pypaystack==1.24
 python-dateutil
 python-decouple
-
+requests==2.26.0
+requests-oauthlib==1.3.1
 pytz
-requests
+
 requests-oauthlib
 six
 sqlparse

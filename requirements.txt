@@ -17,7 +17,7 @@ defusedxml
 Pygments==2.12.0
 Pillow
 pycodestyle
-pypaystackapi
+paystackapi
 python-dateutil
 python-decouple
 requests==2.26.0

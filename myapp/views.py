@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from pypaystackapi.paystack import Transaction, Customer, Plan
+from paystackapi.paystack import Transaction, Customer, Plan
 from django.http import JsonResponse
 from django.conf import settings
 import json
